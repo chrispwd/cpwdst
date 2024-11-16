@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "CommitMono Nerd Font Mono:style=Regular:pixelsize=18";
+static char *font = "monospace:size=14:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
