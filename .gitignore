@@ -2,6 +2,7 @@
 config.h
 
 # Build files
+st
 *.o
 *.obj
 *.elf
