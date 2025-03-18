@@ -95,30 +95,56 @@ unsigned int tabspaces = 4;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	/* twilight dark */
-	"#1e1d1c",  /*  0: black    */
-	"#b95f44",  /*  1: red      */
-	"#8f9d6a",  /*  2: green    */
-	"#c0b775",  /*  3: yellow   */
-	"#7587a6",  /*  4: blue     */
-	"#9b859d",  /*  5: magenta  */
-	"#94a6b9",  /*  6: cyan     */
-	"#a7a5a1",  /*  7: white    */
-	"#605e5a",  /*  8: brblack  */
-	"#b95f44",  /*  9: brred    */
-	"#8f9d6a",  /* 10: brgreen  */
-	"#c0b775",  /* 11: bryellow */
-	"#7587a6",  /* 12: brblue   */
-	"#9b859d",  /* 13: brmagenta*/
-	"#94a6b9",  /* 14: brcyan   */
-	"#c9c5bf",  /* 15: brwhite  */
+    /* /\* twilight dark *\/ */
+    /* "#1e1d1c",  /\*  0: black    *\/ */
+    /* "#b95f44",  /\*  1: red      *\/ */
+    /* "#8f9d6a",  /\*  2: green    *\/ */
+    /* "#c0b775",  /\*  3: yellow   *\/ */
+    /* "#7587a6",  /\*  4: blue     *\/ */
+    /* "#9b859d",  /\*  5: magenta  *\/ */
+    /* "#94a6b9",  /\*  6: cyan     *\/ */
+    /* "#a7a5a1",  /\*  7: white    *\/ */
+    /* "#605e5a",  /\*  8: brblack  *\/ */
+    /* "#b95f44",  /\*  9: brred    *\/ */
+    /* "#8f9d6a",  /\* 10: brgreen  *\/ */
+    /* "#c0b775",  /\* 11: bryellow *\/ */
+    /* "#7587a6",  /\* 12: brblue   *\/ */
+    /* "#9b859d",  /\* 13: brmagenta*\/ */
+    /* "#94a6b9",  /\* 14: brcyan   *\/ */
+    /* "#c9c5bf",  /\* 15: brwhite  *\/ */
+
+    /* [255] = 0, */
+
+    /* /\* more colors can be added after 255 to use with DefaultXX *\/ */
+
+    /* "#95928f", */
+    /* "#222120", */
+
+    /* zenburn */
+    "#3f3f3f",  /*  0: black    */
+    "#cc9393",  /*  1: red      */
+    "#7f9f7f",  /*  2: green    */
+    "#f0dfaf",  /*  3: yellow   */
+    "#8cd0d3",  /*  4: blue     */
+    "#DC8CC3",  /*  5: magenta  */
+    "#93e0e3",  /*  6: cyan     */
+    "#dcdccc",  /*  7: white    */
+    "#7f7f7f",  /*  8: brblack  */
+    "#9c6363",  /*  9: brred    */
+    "#5f7f5f",  /* 10: brgreen  */
+    "#d0bf8f",  /* 11: bryellow */
+    "#94bff3",  /* 12: brblue   */
+    "#cb7bb2",  /* 13: brmagenta*/
+    "#82cfd2",  /* 14: brcyan   */
+    "#ffffef",  /* 15: brwhite  */
 
     [255] = 0,
 
-	/* more colors can be added after 255 to use with DefaultXX */
+    /* more colors can be added after 255 to use with DefaultXX */
 
-    "#95928f",
-    "#222120",
+    "#dcdccc",
+    "#3f3f3f",
+
 };
 
 /*
