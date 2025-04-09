@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "monospace:size=13:style=Regular:antialias=true:autohint=true";
+static char *font = "monospace:pixelsize=16:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -121,21 +121,21 @@ static const char *colorname[] = {
     /* "#222120", */
 
     /* zenburn */
-    "#3f3f3f",  /*  0: black    */
-    "#cc9393",  /*  1: red      */
+    "#2b2b2b",  /*  0: black    */
+    "#dfaf8f",  /*  1: red      */
     "#7f9f7f",  /*  2: green    */
     "#f0dfaf",  /*  3: yellow   */
     "#8cd0d3",  /*  4: blue     */
     "#DC8CC3",  /*  5: magenta  */
     "#93e0e3",  /*  6: cyan     */
-    "#dcdccc",  /*  7: white    */
-    "#7f7f7f",  /*  8: brblack  */
+    "#989890",  /*  7: white    */
+    "#6f6f6f",  /*  8: brblack  */
     "#9c6363",  /*  9: brred    */
-    "#5f7f5f",  /* 10: brgreen  */
+    "#BFEBBF",  /* 10: brgreen  */
     "#d0bf8f",  /* 11: bryellow */
     "#94bff3",  /* 12: brblue   */
-    "#cb7bb2",  /* 13: brmagenta*/
-    "#82cfd2",  /* 14: brcyan   */
+    "#DC8CC3",  /* 13: brmagenta*/
+    "#93e0e3",  /* 14: brcyan   */
     "#ffffef",  /* 15: brwhite  */
 
     [255] = 0,
