@@ -95,88 +95,49 @@ unsigned int tabspaces = 4;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-    /* /\* twilight dark *\/ */
-    /* "#1e1d1c",  /\*  0: black    *\/ */
-    /* "#b95f44",  /\*  1: red      *\/ */
-    /* "#8f9d6a",  /\*  2: green    *\/ */
-    /* "#c0b775",  /\*  3: yellow   *\/ */
-    /* "#7587a6",  /\*  4: blue     *\/ */
-    /* "#9b859d",  /\*  5: magenta  *\/ */
-    /* "#94a6b9",  /\*  6: cyan     *\/ */
-    /* "#a7a5a1",  /\*  7: white    *\/ */
-    /* "#605e5a",  /\*  8: brblack  *\/ */
-    /* "#b95f44",  /\*  9: brred    *\/ */
-    /* "#8f9d6a",  /\* 10: brgreen  *\/ */
-    /* "#c0b775",  /\* 11: bryellow *\/ */
-    /* "#7587a6",  /\* 12: brblue   *\/ */
-    /* "#9b859d",  /\* 13: brmagenta*\/ */
-    /* "#94a6b9",  /\* 14: brcyan   *\/ */
-    /* "#c9c5bf",  /\* 15: brwhite  *\/ */
+  /* sanity-tomorrow-eighties */
+    /* 8 normal colors */
+    "#393939", /* black   */
+    "#a54242", /* red     */
+    "#8c9440", /* green   */
+    "#de935f", /* yellow  */
+    "#5f819d", /* blue    */
+    "#85678f", /* magenta */
+    "#5e8d87", /* cyan    */
+    "#888888", /* white   */
 
-    /* [255] = 0, */
+    /* 8 bright colors */
+    "#515151", /* black   */
+    "#cc6666", /* red     */
+    "#b5bd68", /* green   */
+    "#f0c674", /* yellow  */
+    "#81a2be", /* blue    */
+    "#b294bb", /* magenta */
+    "#8abeb7", /* cyan    */
+    "#acafad", /* white   */
 
-    /* /\* more colors can be added after 255 to use with DefaultXX *\/ */
-
-    /* "#95928f", */
-    /* "#222120", */
-
-    /* zenburn */
-    /* "#2b2b2b",  /\*  0: black    *\/ */
-    /* "#dfaf8f",  /\*  1: red      *\/ */
-    /* "#7f9f7f",  /\*  2: green    *\/ */
-    /* "#f0dfaf",  /\*  3: yellow   *\/ */
-    /* "#8cd0d3",  /\*  4: blue     *\/ */
-    /* "#DC8CC3",  /\*  5: magenta  *\/ */
-    /* "#93e0e3",  /\*  6: cyan     *\/ */
-    /* "#989890",  /\*  7: white    *\/ */
-    /* "#6f6f6f",  /\*  8: brblack  *\/ */
-    /* "#9c6363",  /\*  9: brred    *\/ */
-    /* "#BFEBBF",  /\* 10: brgreen  *\/ */
-    /* "#d0bf8f",  /\* 11: bryellow *\/ */
-    /* "#94bff3",  /\* 12: brblue   *\/ */
-    /* "#DC8CC3",  /\* 13: brmagenta*\/ */
-    /* "#93e0e3",  /\* 14: brcyan   *\/ */
-    /* "#ffffef",  /\* 15: brwhite  *\/ */
-
-  /* solarized dark */
-    "#073642", /*  0: black    */
-    "#dc322f", /*  1: red      */
-    "#859900", /*  2: green    */
-    "#b58900", /*  3: yellow   */
-    "#268bd2", /*  4: blue     */
-    "#d33682", /*  5: magenta  */
-    "#2aa198", /*  6: cyan     */
-    "#eee8d5", /*  7: white    */
-    "#002b36", /*  8: brblack  */
-    "#cb4b16", /*  9: brred    */
-    "#586e75", /* 10: brgreen  */
-    "#657b83", /* 11: bryellow */
-    "#839496", /* 12: brblue   */
-    "#6c71c4", /* 13: brmagenta*/
-    "#93a1a1", /* 14: brcyan   */
-    "#fdf6e3", /* 15: brwhite  */
-	
-    [255] = 0,
-
-    /* more colors can be added after 255 to use with DefaultXX */
-	
-    "#dcdccc",
-    "#3f3f3f",
-
+	[255] = 0,
+  /* special colors */
+  "#2d2d2d", /* background */
+  "#acafad", /* foreground */
 };
 
 /*
  * Default colors (colorname index)
- * foreground, background, cursor, reverse cursor
+ * foreground, background, cursor
  */
-/* unsigned int defaultfg = 256; */
-/* unsigned int defaultbg = 257; */
-/* unsigned int defaultcs = 256; */
-/* static unsigned int defaultrcs = 15; */
-unsigned int defaultfg = 12;
-unsigned int defaultbg = 8;
-unsigned int defaultcs = 14;
+unsigned int defaultfg = 257;
+unsigned int defaultbg = 256;
+unsigned int defaultcs = 12;
 static unsigned int defaultrcs = 15;
+
+/*
+ * Colors used, when the specific fg == defaultfg. So in reverse mode this
+ * will reverse too. Another logic would only make the simple feature too
+ * complex.
+ */
+static unsigned int defaultitalic = 7;
+static unsigned int defaultunderline = 7;
 
 /*
  * https://invisible-island.net/xterm/ctlseqs/ctlseqs.html#h4-Functions-using-CSI-_-ordered-by-the-final-character-lparen-s-rparen:CSI-Ps-SP-q.1D81
