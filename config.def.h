@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "monospace:size=14";
+static char *font = "monospace:size=13";
 static int borderpx = 2;
 
 /*
@@ -95,30 +95,30 @@ unsigned int tabspaces = 4;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-  /* Everforest dark soft */
-  /* 8 normal colors */
-  [0] = "#293136", /* black   */
-  [1] = "#e67e80", /* red     */
-  [2] = "#a7c080", /* green   */
-  [3] = "#dbbc7f", /* yellow  */
-  [4] = "#7fbbb3", /* blue    */
-  [5] = "#d699b6", /* magenta */
-  [6] = "#83c092", /* cyan    */
-  [7] = "#7a8478", /* white   */
+    /* 3024-dark */
+    /* 8 normal colors */
+    [0] = "#3a3432", /* black   */
+    [1] = "#db2d20", /* red     */
+    [2] = "#01a252", /* green   */
+    [3] = "#fded02", /* yellow  */
+    [4] = "#01a0e4", /* blue    */
+    [5] = "#a16a94", /* magenta */
+    [6] = "#b5e4f4", /* cyan    */
+    [7] = "#807d7c", /* white   */
 
-  /* 8 bright colors */
-  [8]  = "#434f55", /* black   */
-  [9]  = "#e67e80", /* red     */
-  [10] = "#a7c080", /* green   */
-  [11] = "#e69875", /* yellow  */
-  [12] = "#7fbbb3", /* blue    */
-  [13] = "#d699b6", /* magenta */
-  [14] = "#83c092", /* cyan    */
-  [15] = "#d3c6aa", /* white   */
+    /* 8 bright colors */
+    [8] = "#4a4543",  /* black   */
+    [9] = "#db2d20",  /* red     */
+    [10] = "#01a252", /* green   */
+    [11] = "#cdab53", /* yellow  */
+    [12] = "#01a0e4", /* blue    */
+    [13] = "#e8bbd0", /* magenta */
+    [14] = "#b5e4f4", /* cyan    */
+    [15] = "#d6d5d4", /* white   */
 
-  /* special colors */
-  [256] = "#333c43", /* background */
-  [257] = "#d3c6aa", /* foreground */
+    /* special colors */
+    [256] = "#090300", /* background */
+    [257] = "#a5a2a2", /* foreground */
 };
 
 /*
@@ -127,8 +127,8 @@ static const char *colorname[] = {
  */
 unsigned int defaultfg = 257;
 unsigned int defaultbg = 256;
-unsigned int defaultcs = 257;
-static unsigned int defaultrcs = 257;
+unsigned int defaultcs = 15;
+static unsigned int defaultrcs = 15;
 
 /*
  * Colors used, when the specific fg == defaultfg. So in reverse mode this
