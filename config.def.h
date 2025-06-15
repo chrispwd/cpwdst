@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "monospace:size=13";
+static char *font = "monospace:size=14";
 static int borderpx = 2;
 
 /*
@@ -95,30 +95,30 @@ unsigned int tabspaces = 4;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-    /* 3024-dark */
+    /* gruvbox-material-dark-soft */
     /* 8 normal colors */
-    [0] = "#3a3432", /* black   */
-    [1] = "#db2d20", /* red     */
-    [2] = "#01a252", /* green   */
-    [3] = "#fded02", /* yellow  */
-    [4] = "#01a0e4", /* blue    */
-    [5] = "#a16a94", /* magenta */
-    [6] = "#b5e4f4", /* cyan    */
-    [7] = "#807d7c", /* white   */
+    [0] = "#1d2021", /* black   */
+    [1] = "#ea6962", /* red     */
+    [2] = "#a9b665", /* green   */
+    [3] = "#d8a657", /* yellow  */
+    [4] = "#7daea3", /* blue    */
+    [5] = "#d3869b", /* magenta */
+    [6] = "#89b482", /* cyan    */
+    [7] = "#d4be98", /* white   */
 
     /* 8 bright colors */
-    [8] = "#4a4543",  /* black   */
-    [9] = "#db2d20",  /* red     */
-    [10] = "#01a252", /* green   */
-    [11] = "#cdab53", /* yellow  */
-    [12] = "#01a0e4", /* blue    */
-    [13] = "#e8bbd0", /* magenta */
-    [14] = "#b5e4f4", /* cyan    */
-    [15] = "#d6d5d4", /* white   */
+    [8] = "#928374",  /* black   */
+    [9] = "#ef938e",  /* red     */
+    [10] = "#a9b665", /* green   */
+    [11] = "#fabd2f", /* yellow  */
+    [12] = "#7daea3", /* blue    */
+    [13] = "#d3869b", /* magenta */
+    [14] = "#89b482", /* cyan    */
+    [15] = "#e2d3ba", /* white   */
 
     /* special colors */
-    [256] = "#090300", /* background */
-    [257] = "#a5a2a2", /* foreground */
+    [256] = "#32302f", /* background */
+    [257] = "#d4be98", /* foreground */
 };
 
 /*
