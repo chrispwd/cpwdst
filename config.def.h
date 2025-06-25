@@ -95,30 +95,29 @@ unsigned int tabspaces = 4;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-  /* lucius */
-  /* 8 normal colors */
-  [0] = "#1d1d1d", /* black   */
-  [1] = "#d75f5f", /* red     */
-  [2] = "#87af5f", /* green   */
-  [3] = "#afaf87", /* yellow  */
-  [4] = "#5fafd7", /* blue    */
-  [5] = "#af87af", /* magenta */
-  [6] = "#8abeb7", /* cyan    */
-  [7] = "#6c6c6c", /* white   */
+    /* Doom-one */
+    [0] = "#21242b", /* black   */
+    [1] = "#ff6c6b", /* red     */
+    [2] = "#98be65", /* green   */
+    [3] = "#ecbe7b", /* yellow  */
+    [4] = "#51afef", /* blue    */
+    [5] = "#c678dd", /* magenta */
+    [6] = "#46d9ff", /* cyan    */
+    [7] = "#5b6268", /* white   */
 
-  /* 8 bright colors */
-  [8]  = "#444444", /* black   */
-  [9]  = "#d75f5f", /* red     */
-  [10] = "#87af5f", /* green   */
-  [11] = "#afaf87", /* yellow  */
-  [12] = "#5fafd7", /* blue    */
-  [13] = "#af87af", /* magenta */
-  [14] = "#8abeb7", /* cyan    */
-  [15] = "#cbcbcb", /* white   */
+    /* 8 bright colors */
+    [8] = "#3f444a",  /* black   */
+    [9] = "#ff6c6b",  /* red     */
+    [10] = "#98be65", /* green   */
+    [11] = "#ecbe7b", /* yellow  */
+    [12] = "#51afef", /* blue    */
+    [13] = "#c678dd", /* magenta */
+    [14] = "#46d9ff", /* cyan    */
+    [15] = "#dfdfdf", /* white   */
 
-  /* special colors */
-  [256] = "#303030", /* background */
-  [257] = "#b2b2b2", /* foreground */
+    /* special colors */
+    [256] = "#282c34", /* background */
+    [257] = "#bbc2cf", /* foreground */
 };
 
 /*
@@ -127,8 +126,8 @@ static const char *colorname[] = {
  */
 unsigned int defaultfg = 257;
 unsigned int defaultbg = 256;
-unsigned int defaultcs = 15;
-static unsigned int defaultrcs = 15;
+unsigned int defaultcs = 14;
+static unsigned int defaultrcs = 14;
 
 /*
  * Colors used, when the specific fg == defaultfg. So in reverse mode this
