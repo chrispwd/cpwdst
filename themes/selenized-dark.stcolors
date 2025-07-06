@@ -1,0 +1,24 @@
+  /* selenized dark */
+    "#174956", /*  0: black    */
+    "#fa5750", /*  1: red      */
+    "#75b938", /*  2: green    */
+    "#dbb32d", /*  3: yellow   */
+    "#4695f7", /*  4: blue     */
+    "#f275be", /*  5: magenta  */
+    "#41c7b9", /*  6: cyan     */
+    "#72898f", /*  7: white    */
+    "#002b36", /*  8: brblack  */
+    "#ff665c", /*  9: brred    */
+    "#84c747", /* 10: brgreen  */
+    "#ebc13d", /* 11: bryellow */
+    "#58a3ff", /* 12: brblue   */
+    "#ff84cd", /* 13: brmagenta*/
+    "#53d6c7", /* 14: brcyan   */
+    "#cad8d9", /* 15: brwhite  */
+	
+    [255] = 0,
+
+    /* more colors can be added after 255 to use with DefaultXX */
+	
+    "#adbcbc",
+    "#103c48",
