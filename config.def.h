@@ -96,48 +96,47 @@ unsigned int tabspaces = 4;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 
-  /* tomorrow-night */
   /* 8 normal colors */
-  [0] = "#282a2e", /* black   */
-  [1] = "#cc6666", /* red     */
-  [2] = "#b5bd68", /* green   */
-  [3] = "#f0c674", /* yellow  */
-  [4] = "#81a2be", /* blue    */
-  [5] = "#b294bb", /* magenta */
-  [6] = "#8abeb7", /* cyan    */
-  [7] = "#707880", /* white   */
+  [0] = "#073642", /* black   */
+  [1] = "#dc322f", /* red     */
+  [2] = "#859900", /* green   */
+  [3] = "#b58900", /* yellow  */
+  [4] = "#268bd2", /* blue    */
+  [5] = "#d33682", /* magenta */
+  [6] = "#2aa198", /* cyan    */
+  [7] = "#eee8d5", /* white   */
 
   /* 8 bright colors */
-  [8] = "#373b41",  /* black   */
-  [9] = "#cc6666",  /* red     */
-  [10] = "#b5bd68", /* green   */
-  [11] = "#f0c674", /* yellow  */
-  [12] = "#81a2be", /* blue    */
-  [13] = "#b294bb", /* magenta */
-  [14] = "#8abeb7", /* cyan    */
-  [15] = "#c5c8c6", /* white   */
+  [8]  = "#002b36", /* black   */
+  [9]  = "#cb4b16", /* red     */
+  [10] = "#586e75", /* green   */
+  [11] = "#657b83", /* yellow  */
+  [12] = "#839496", /* blue    */
+  [13] = "#6c71c4", /* magenta */
+  [14] = "#93a1a1", /* cyan    */
+  [15] = "#fdf6e3", /* white   */
 
   /* special colors */
-  [256] = "#1d1f21", /* background */
-  [257] = "#a5a8a6", /* foreground */
+  [256] = "#002b36", /* background */
+  [257] = "#839496", /* foreground */
 };
 
 /*
  * Default colors (colorname index)
  * foreground, background, cursor
  */
-unsigned int defaultfg = 257;
-unsigned int defaultbg = 256;
-unsigned int defaultcs = 1;
-static unsigned int defaultrcs = 256;
+unsigned int defaultfg = 12;
+unsigned int defaultbg = 8;
+unsigned int defaultcs = 14;
+static unsigned int defaultrcs = 15;
 
 /*
  * Colors used, when the specific fg == defaultfg. So in reverse mode this
  * will reverse too. Another logic would only make the simple feature too
  * complex.
  */
-static unsigned int defaultitalic = 257;
-static unsigned int defaultunderline = 257;
+static unsigned int defaultitalic = 7;
+static unsigned int defaultunderline = 7;
 
 /*
  * https://invisible-island.net/xterm/ctlseqs/ctlseqs.html#h4-Functions-using-CSI-_-ordered-by-the-final-character-lparen-s-rparen:CSI-Ps-SP-q.1D81
