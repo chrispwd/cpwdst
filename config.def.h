@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "monospace:size=12";
+static char *font = "monospace:size=13";
 static int borderpx = 2;
 
 /*
@@ -97,28 +97,28 @@ unsigned int tabspaces = 4;
 static const char *colorname[] = {
 
   /* 8 normal colors */
-  [0] = "#1d2021", /* black   */
-  [1] = "#fb4933", /* red     */
-  [2] = "#98971a", /* green   */
-  [3] = "#d79921", /* yellow  */
-  [4] = "#458588", /* blue    */
-  [5] = "#b16286", /* magenta */
-  [6] = "#689d6a", /* cyan    */
-  [7] = "#d5c4a1", /* white   */
+  [0] = "#19171c", /* black   */
+  [1] = "#be4678", /* red     */
+  [2] = "#2a9292", /* green   */
+  [3] = "#a06e3b", /* yellow  */
+  [4] = "#576ddb", /* blue    */
+  [5] = "#955ae7", /* magenta */
+  [6] = "#398bc6", /* cyan    */
+  [7] = "#8b8792", /* white   */
 
   /* 8 bright colors */
-  [8]  = "#32302f", /* black   */
-  [9]  = "#d65d0e", /* red     */
-  [10] = "#7c6f64", /* green   */
-  [11] = "#928374", /* yellow  */
-  [12] = "#a89984", /* blue    */
-  [13] = "#d3869b", /* magenta */
-  [14] = "#bdae93", /* cyan    */
-  [15] = "#fbf1c7", /* white   */
+  [8]  = "#26232a", /* black   */
+  [9]  = "#aa573c", /* red     */
+  [10] = "#585260", /* green   */
+  [11] = "#655f6d", /* yellow  */
+  [12] = "#7e7887", /* blue    */
+  [13] = "#e2dfe7", /* magenta */
+  [14] = "#bf40bf", /* cyan    */
+  [15] = "#efecf4", /* white   */
 
   /* special colors */
-  [256] = "#282828", /* background */
-  [257] = "#a89984", /* foreground */
+  [256] = "#19171c", /* background */
+  [257] = "#8b8792", /* foreground */
 };
 
 /*
@@ -127,7 +127,7 @@ static const char *colorname[] = {
  */
 unsigned int defaultfg = 257;
 unsigned int defaultbg = 256;
-unsigned int defaultcs = 6;
+unsigned int defaultcs = 257;
 unsigned int defaultrcs = 8;
 
 /*
