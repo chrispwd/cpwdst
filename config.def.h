@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "monospace:size=13";
+static char *font = "monospace:size=12";
 static int borderpx = 2;
 
 /*
@@ -20,6 +20,9 @@ static char *shell = "/bin/sh";
 char *utmp = NULL;
 /* scroll program: to enable use a string like "scroll" */
 char *scroll = NULL;
+// If available font weight is different from fontconfig's FC_WEIGHT (200),
+// allow infelicity between the weights:
+static int max_bold_weight_infelicity = 20;
 char *stty_args = "stty raw pass8 nl -echo -iexten -cstopb 38400";
 
 /* identification sequence returned in DA and DECID */

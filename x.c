@@ -957,10 +957,19 @@ xloadfont(Font *f, FcPattern *pattern)
 	}
 
 	if ((XftPatternGetInteger(pattern, "weight", 0, &wantattr) ==
-	    XftResultMatch)) {
-		if ((XftPatternGetInteger(f->match->pattern, "weight", 0,
-		    &haveattr) != XftResultMatch) || haveattr != wantattr) {
-			f->badweight = 1;
+		 XftResultMatch)) {
+		int _xft_weight = XftPatternGetInteger(
+			 f->match->pattern, "weight", 0, &haveattr
+		);
+		if ((_xft_weight != XftResultMatch) || haveattr != wantattr) {
+			if (
+				MAX(
+					abs(_xft_weight - XftResultMatch),
+					abs(haveattr - wantattr)
+					) > max_bold_weight_infelicity
+				) {
+			  f->badweight = 1;
+			}
 			fputs("font weight does not match\n", stderr);
 		}
 	}
@@ -1428,10 +1437,6 @@ xdrawglyphfontspecs(const XftGlyphFontSpec *specs, Glyph base, int len, int x, i
 	} else {
 		bg = &dc.col[base.bg];
 	}
-
-	/* Change basic system colors [0-7] to bright system colors [8-15] */
-	if ((base.mode & ATTR_BOLD_FAINT) == ATTR_BOLD && BETWEEN(base.fg, 0, 7))
-		fg = &dc.col[base.fg + 8];
 
 	if (IS_SET(MODE_REVERSE)) {
 		if (fg == &dc.col[defaultfg]) {
