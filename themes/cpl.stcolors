@@ -4,11 +4,11 @@ static const char *colorname[] = {
   /* 8 normal colors */
   [0] = "#1d1d1d", /* black   */
   [1] = "#b10b00", /* red     */
-  [2] = "#007232", /* green   */
-  [3] = "#745b00", /* yellow  */
-  [4] = "#3123ff", /* blue    */
-  [5] = "#9b0097", /* magenta */
-  [6] = "#006a78", /* cyan    */
+  [2] = "#297200", /* green   */
+  [3] = "#a27f00", /* yellow  */
+  [4] = "#006dbd", /* blue    */
+  [5] = "#ae3aab", /* magenta */
+  [6] = "#00808f", /* cyan    */
   [7] = "#989898", /* white   */
 
   /* 8 bright colors */
@@ -17,8 +17,8 @@ static const char *colorname[] = {
   [10] = "#424242", /* green   */
   [11] = "#585858", /* yellow  */
   [12] = "#777777", /* blue    */
-  [13] = "#eb00e4", /* magenta */
-  [14] = "#00a3b7", /* cyan    */
+  [13] = "#888888", /* magenta */
+  [14] = "#7a2d00", /* cyan    */
   [15] = "#ababab", /* white   */
 
   /* special colors */
@@ -30,9 +30,10 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor
  */
-static unsigned int defaultfg = 257;
-static unsigned int defaultbg = 256;
-static unsigned int defaultcs = 257;
+unsigned int defaultfg = 257;
+unsigned int defaultbg = 256;
+unsigned int defaultcs = 6;
+static unsigned int defaultrcs = 256;
 
 /*
  * Colors used, when the specific fg == defaultfg. So in reverse mode this
