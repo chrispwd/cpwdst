@@ -100,28 +100,28 @@ unsigned int tabspaces = 4;
 static const char *colorname[] = {
 
   /* 8 normal colors */
-  [0] = "#2b2b2b", /* black   */
-  [1] = "#dca3a3", /* red     */
-  [2] = "#5f7f5f", /* green   */
-  [3] = "#e0cf9f", /* yellow  */
-  [4] = "#7cb8bb", /* blue    */
-  [5] = "#dc8cc3", /* magenta */
-  [6] = "#93e0e3", /* cyan    */
-  [7] = "#c0c0b2", /* white   */
+  [0] = "#073642", /* black   */
+  [1] = "#dc322f", /* red     */
+  [2] = "#859900", /* green   */
+  [3] = "#b58900", /* yellow  */
+  [4] = "#268bd2", /* blue    */
+  [5] = "#d33682", /* magenta */
+  [6] = "#2aa198", /* cyan    */
+  [7] = "#eee8d5", /* white   */
 
   /* 8 bright colors */
-  [8]  = "#4f4f4f", /* black   */
-  [9]  = "#dfaf8f", /* red     */
-  [10] = "#606060", /* green   */
-  [11] = "#6f6f6f", /* yellow  */
-  [12] = "#808080", /* blue    */
-  [13] = "#bebeb0", /* magenta */
-  [14] = "#000000", /* cyan    */
-  [15] = "#dcdccc", /* white   */
+  [8]  = "#002b36", /* black   */
+  [9]  = "#cb4b16", /* red     */
+  [10] = "#586e75", /* green   */
+  [11] = "#657b83", /* yellow  */
+  [12] = "#839496", /* blue    */
+  [13] = "#6c71c4", /* magenta */
+  [14] = "#93a1a1", /* cyan    */
+  [15] = "#fdf6e3", /* white   */
 
   /* special colors */
-  [256] = "#3f3f3f", /* background */
-  [257] = "#bebeb0", /* foreground */
+  [256] = "#002b36", /* background */
+  [257] = "#839496", /* foreground */
 };
 
 /*
@@ -130,8 +130,8 @@ static const char *colorname[] = {
  */
 unsigned int defaultfg = 257;
 unsigned int defaultbg = 256;
-unsigned int defaultcs = 15;
-unsigned int defaultrcs = 0;
+unsigned int defaultcs = 257;
+unsigned int defaultrcs = 256;
 
 /*
  * Colors used, when the specific fg == defaultfg. So in reverse mode this
