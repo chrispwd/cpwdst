@@ -3,17 +3,17 @@ static const char *colorname[] = {
 
   /* 8 normal colors */
   [0] = "#1d1d1d", /* black   */
-  [1] = "#b10b00", /* red     */
+  [1] = "#93241c", /* red     */
   [2] = "#297200", /* green   */
   [3] = "#a27f00", /* yellow  */
-  [4] = "#006dbd", /* blue    */
-  [5] = "#ae3aab", /* magenta */
-  [6] = "#00808f", /* cyan    */
+  [4] = "#005a9c", /* blue    */
+  [5] = "#8f308d", /* magenta */
+  [6] = "#006a78", /* cyan    */
   [7] = "#989898", /* white   */
 
   /* 8 bright colors */
   [8]  = "#232323", /* black   */
-  [9]  = "#a05803", /* red     */
+  [9]  = "#7a3b00", /* red     */
   [10] = "#424242", /* green   */
   [11] = "#585858", /* yellow  */
   [12] = "#777777", /* blue    */
@@ -30,10 +30,9 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor
  */
-unsigned int defaultfg = 257;
-unsigned int defaultbg = 256;
-unsigned int defaultcs = 6;
-static unsigned int defaultrcs = 256;
+static unsigned int defaultfg = 257;
+static unsigned int defaultbg = 256;
+static unsigned int defaultcs = 257;
 
 /*
  * Colors used, when the specific fg == defaultfg. So in reverse mode this

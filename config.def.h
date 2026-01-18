@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "monospace:size=11";
+static char *font = "monospace:size=12";
 static int borderpx = 2;
 
 /*
@@ -131,7 +131,7 @@ static const char *colorname[] = {
 unsigned int defaultfg = 257;
 unsigned int defaultbg = 256;
 unsigned int defaultcs = 7;
-static unsigned int defaultrcs = 0;
+static unsigned int defaultrcs = 256;
 
 /*
  * Colors used, when the specific fg == defaultfg. So in reverse mode this
