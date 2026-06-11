@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "monospace:size=15";
+static char *font = "monospace:size=14";
 /* Spare fonts */
 static char *font2[] = {
 	"Symbols Nerd Font:pixelsize=12:antialias=true:autohint=true",
